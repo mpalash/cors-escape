@@ -20,7 +20,8 @@ const corsProxy = require('./lib/cors-escape');
 corsProxy.createServer({
     originBlacklist,
     originWhitelist,
-    requireHeaders: ['origin'],
+    //requi reHeaders: ['origin'],
+    requireHeaders: [],
     checkRateLimit,
     removeHeaders: [
         // Strip Heroku-specific headers
